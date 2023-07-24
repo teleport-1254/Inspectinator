@@ -15,8 +15,8 @@ The site is analyzed based on the following aspects or parameters: <br/>
 ![alt text](demo/result.png)
 ---
 ## Requirements: <br/>
-    - Python 3.9 <br/>
-    - MySQL 8.0 <br/>
+- Python 3.9 <br/>
+- MySQL 8.0 <br/>
 ---
 ## Setup: <br/>
 Install all required python libraries by <br/>
