@@ -1,19 +1,24 @@
 import os
 from flask import Flask, request, render_template, redirect, url_for, flash, send_file, abort
+# importing isscam for analyzing url and domain
 import isscam
 
+# Flask obj
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = "sjdcfiushfbiubfiusicfieunfjnskfncdks"
 
+# route for home page
 @app.route('/')
 def index():
     return redirect(url_for('home'))
 
+# also route for home page
 @app.route('/Inspectinator')
 def home():
     return render_template('home.html')
 
+# route for result page
 @app.route('/Inspectinator/result', methods=["POST", "GET"])
 def result():
     if request.method == "POST":
@@ -42,5 +47,6 @@ def result():
 
         return render_template('result.html', url=url_input, messages=messages)
 
+# driver code
 if __name__ == "__main__":
-    app.run(host="0.0.0.0")
+    app.run()
