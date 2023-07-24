@@ -13,15 +13,20 @@ The site is analyzed based on the following aspects or parameters: <br/>
 
 ### __Result page__ <br/>
 ![alt text](demo/result.png)
+
+### __Demo video__ <br/>
+![alt text](demo/vid.mp4)
+
 ---
 ## Requirements: <br/>
 - Python 3.9 <br/>
 - MySQL 8.0 <br/>
 ---
+
 ## Setup: <br/>
 Install all required python libraries by <br/>
 `pip install -r requirements.txt` <br/>
 Run MySQL queries in `table-query.txt` <br/>
 Change `mysql.connector` configs in `isscam.py` <br/>
 Run `app.py` <br/>
-Open browser and navigate to [http:127.0.0.1:5000/]
+Open browser and navigate to `http:127.0.0.1:5000/`
