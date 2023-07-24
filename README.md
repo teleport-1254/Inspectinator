@@ -18,6 +18,10 @@ The site is analyzed based on the following aspects or parameters: <br/>
     - Python 3.9 <br/>
     - MySQL 8.0 <br/>
 ---
-Install all required python libraries by___
-`pip install -r requirements.txt`___
-Run MySQL queries in `table-query.txt`___
+## Setup: <br/>
+Install all required python libraries by <br/>
+`pip install -r requirements.txt` <br/>
+Run MySQL queries in `table-query.txt` <br/>
+Change `mysql.connector` configs in `isscam.py` <br/>
+Run `app.py` <br/>
+Open browser and navigate to [a link](http:127.0.0.1:5000/)
