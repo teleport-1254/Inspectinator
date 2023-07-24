@@ -1,0 +1,5 @@
+Flask
+Werkzeug
+googlesearch-python
+mysql-connector-python
+python-whois

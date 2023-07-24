@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Inspectinator</title>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="contact">
+        <img src="{{ url_for('static', filename='images/info-btn.png') }}" alt="info-btn" width="20px" onclick="popup('contact-links')">
+    </div>
+    <div class="contact-links" id="contact-links" align="right" style="display: none;">
+        <a style="text-decoration: none;" class="mail" href="mailto:workforprabhat1254@gmail.com">
+            <img class="ico" src="{{ url_for('static', filename='images/gmailico.png') }}" alt="insta-btn" width="30">
+        </a>
+
+        <a style="text-decoration: none;" href="https://github.com/teleport-1254">
+            <img class="ico" src="{{ url_for('static', filename='images/gitico.png') }}" alt="insta-btn" width="30">
+        </a>
+
+        <a style="text-decoration: none;" href="https://www.instagram.com/teleport_1254">
+            <img class="ico" src="{{ url_for('static', filename='images/instaico.png') }}" alt="github-btn" width="30">
+        </a>
+    </div>
+    <div class="header">
+        <a class="heading" href="/Inspectinator">Inspectinator</a>
+    </div>
+    <div class="url-input-field">
+        <form action="/Inspectinator/result" method="post">
+            <input type="text" class="search-input" placeholder=">>_" id="url_input" name="url_input" autocomplete="off">
+            <input type="submit" class="search-button" value="Go">
+        </form>
+    </div>
+
+    <footer>
+        <div class="info">
+            This Web Application checks whether a website is a scam or a fake site. <br>
+            This is done by analysing the site and its contents under some conditions (like, google analysing...),
+            I thought will be enough for an educated guess that a website is a scam or real.
+        </div>
+        <div class="end">
+            <a class="mail" href="mailto:workforprabhat1254@gmail.com">workforprabhat1254@gmail.com</a>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src=
+        "{{ url_for('static', filename='particles.js-master/particles.js') }}">
+    </script>
+    <script src=
+        "{{ url_for('static', filename='particles.js-master/app-white.js') }}">
+    </script>
+</body>
+</html>

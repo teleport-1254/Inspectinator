@@ -1,0 +1,7 @@
+- too many hyphens in domain
+- google analysis 
+- grammar check
+- whois data check
+- tld trust check
+
+https://db.aa419.org/fakebankslist.php

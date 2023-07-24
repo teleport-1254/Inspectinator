@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Inspectinator</title>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="contact">
+        <img src="{{ url_for('static', filename='images/info-btn.png') }}" alt="info-btn" width="20px" onclick="popup('contact-links')">
+    </div>
+    <div class="contact-links" id="contact-links" align="right" style="display: none;">
+        <a style="text-decoration: none;" class="mail" href="mailto:workforprabhat1254@gmail.com">
+            <img class="ico" src="{{ url_for('static', filename='images/gmailico.png') }}" alt="insta-btn" width="30">
+        </a>
+
+        <a style="text-decoration: none;" href="https://github.com/teleport-1254">
+            <img class="ico" src="{{ url_for('static', filename='images/gitico.png') }}" alt="insta-btn" width="30">
+        </a>
+
+        <a style="text-decoration: none;" href="https://www.instagram.com/teleport_1254">
+            <img class="ico" src="{{ url_for('static', filename='images/instaico.png') }}" alt="github-btn" width="30">
+        </a>
+    </div>
+
+    <script src=
+        "{{ url_for('static', filename='particles.js-master/particles.js') }}">
+    </script>
+    {% if messages[0] == "Everthing seem fine." %}
+        <div class="header">
+            <a class="heading-green" href="/Inspectinator">Inspectinator</a>
+        </div>
+        <script src=
+            "{{ url_for('static', filename='particles.js-master/app-green.js') }}">
+        </script>
+    {% endif %}
+
+    {% if messages[0] == "Site feels suspicious!" or messages[0] == "Site is suspicious!" %}
+        <div class="header">
+            <a class="heading-red" href="/Inspectinator">Inspectinator</a>
+        </div>
+        <script src=
+            "{{ url_for('static', filename='particles.js-master/app-red.js') }}">
+        </script>
+    {% endif %}
+
+    <div class="result" align="center">
+        {{ url }}
+        <ul>
+        {% for message in messages %}
+            <li>
+                {{ message }}
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+    <footer>
+        <div class="info" align="center">
+            If something feels too good to be true, then its not!
+        </div>
+        <div class="end">
+            <a class="mail" href="mailto:workforprabhat1254@gmail.com">workforprabhat1254@gmail.com</a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
