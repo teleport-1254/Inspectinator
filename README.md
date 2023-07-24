@@ -24,4 +24,4 @@ Install all required python libraries by <br/>
 Run MySQL queries in `table-query.txt` <br/>
 Change `mysql.connector` configs in `isscam.py` <br/>
 Run `app.py` <br/>
-Open browser and navigate to [a link](http:127.0.0.1:5000/)
+Open browser and navigate to [http:127.0.0.1:5000/]
