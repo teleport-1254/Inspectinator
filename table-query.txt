@@ -1,1 +1,2 @@
+create database Inspectinator;
 create table record(domain varchar(50) primary key, sus_score int, hyphens int, google int, tlds int);
