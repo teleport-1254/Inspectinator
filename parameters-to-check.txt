@@ -4,4 +4,4 @@
 - whois data check
 - tld trust check
 
-https://db.aa419.org/fakebankslist.php
+list of fake and scam sites -> https://db.aa419.org/fakebankslist.php
