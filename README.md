@@ -14,8 +14,7 @@ The site is analyzed based on the following aspects or parameters: <br/>
 ### __Result page__ <br/>
 ![alt text](demo/result.png)
 
-### __Demo video__ <br/>
-demo/vid.mp4
+[### __Demo video__ <br/>](https://github.com/teleport-1254/Inspectinator/blob/main/demo/vid.mp4)
 
 ---
 ## Requirements: <br/>
