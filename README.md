@@ -8,10 +8,10 @@ The site is analyzed based on the following aspects or parameters: <br/>
     - *whois* data check <br/>
     - *tld* check <br/>
 
-__Home page__
+###__Home page__ <br/>
 ![alt text](demo/home2.png)
 
-__Result page__
+###__Result page__ <br/>
 ![alt text](demo/result.png)
 ---
 Requirements:__
