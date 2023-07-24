@@ -15,7 +15,7 @@ The site is analyzed based on the following aspects or parameters: <br/>
 ![alt text](demo/result.png)
 
 ### __Demo video__ <br/>
-![alt text](demo/vid.mp4)
+demo/vid.mp4
 
 ---
 ## Requirements: <br/>
